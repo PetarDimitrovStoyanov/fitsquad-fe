@@ -1,0 +1,51 @@
+@import "../../variable";
+
+.modal {
+  position: fixed;
+  z-index: 10;
+  height: 100%;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  display: none;
+
+  &.active {
+    display: block;
+  }
+
+  .modal-content {
+    padding: 10px 15px;
+    color: black;
+    border-radius: 4px;
+    background: white;
+    width: 100%;
+    max-width: fit-content;
+    min-height: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border: 1px solid darkgrey;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @media (max-width: $mobile) {
+      margin-left: 15px;
+      margin-right: 15px;
+      max-width: 94%;
+
+      * {
+        font-size: 25px;
+      }
+    }
+
+    .img-close-modal {
+      height: 35px;
+      cursor: pointer;
+      align-self: flex-end;
+
+      @media (max-width: $mobile) {
+        height: 50px;
+      }
+    }
+  }
+}

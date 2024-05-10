@@ -1,0 +1,47 @@
+@import "../../variable";
+
+.about-us {
+  height: fit-content;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  h2 {
+    margin: 0 auto;
+    padding-top: 50px;
+    font-family: Impact, sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    padding-left: 15px;
+
+    @media (max-width: $mobile) {
+      padding-left: 2vw;
+      padding-right: 2vw;
+    }
+  }
+
+  p {
+    padding-left: 4%;
+    padding-right: 4%;
+    font-family: Montserrat,sans-serif;
+    //font-family: Corbel,sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0.30px;
+  }
+
+  .last-paragraph {
+    position: relative;
+    margin-bottom: 50px;
+
+    //&:after {
+    //  content: "";
+    //  position: absolute;
+    //  right: 5%;
+    //  bottom: -15%;
+    //  border-right: 5px solid bisque;
+    //  border-bottom: 5px solid bisque;
+    //  height: 100%;
+    //  width: 10%;
+    //}
+  }
+}

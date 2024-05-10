@@ -1,0 +1,164 @@
+@import "../../variable";
+
+.events {
+  width: 100%;
+  align-self: flex-start;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2%;
+  position: relative;
+
+  @media (min-width: 3000px) {
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+  }
+
+  @media (max-width: $mobile) {
+    padding-left: 25px;
+    padding-right: 20px;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 15px;
+    top: -25px;
+    border-left: 3px solid white;
+    border-top: 3px solid white;
+    width: 10%;
+    height: 70%;
+
+    @media (max-width: $mobile) {
+      left: 12px;
+      top: -15px;
+    }
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    right: 15px;
+    bottom: -25px;
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+    width: 60%;
+    height: 30%;
+
+    @media (max-width: $mobile) {
+      right: 12px;
+      bottom: -15px;
+    }
+  }
+
+  &:before, &:after {
+    transition: width 0.8s ease-in-out, height 0.8s ease-in-out;
+  }
+
+  .carousel {
+    overflow: hidden;
+    flex-basis: 60%;
+
+    @media (max-width: $tablet) {
+      flex-basis: 100%;
+    }
+
+    .swiper {
+      height: 100%;
+
+      .swiper-wrapper {
+        .swiper-slide {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          .image-container {
+            img {
+              width: 100%;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+
+      .swiper-button-prev, .swiper-button-next {
+
+        &:after {
+          padding: 5px 15px 5px 10px;
+          color: white;
+          background-color: rgba(0, 0, 0, 0.4);
+        }
+      }
+
+      .swiper-button-prev {
+        &:after {
+          padding: 5px 15px 5px 10px;
+        }
+      }
+
+      .swiper-button-next {
+        &:after {
+          padding: 5px 10px 5px 15px;
+        }
+      }
+    }
+  }
+
+  .text-content {
+    width: fit-content;
+    flex-basis: 38%;
+
+    @media (max-width: $tablet) {
+      flex-basis: 100%;
+    }
+
+    h3, p {
+      color: white;
+      font-family: Montserrat, sans-serif;
+      font-weight: 500;
+      font-size: 20px;
+      letter-spacing: 0.30px;
+    }
+
+    h3 {
+      font-family: Impact, sans-serif;
+      font-weight: 400;
+      font-size: 22px;
+    }
+
+    p {
+      background-color: rgba(0, 0, 0, 0.2);
+      padding: 10px 20px;
+      border-right: 12px;
+    }
+  }
+
+
+  &:hover {
+    &:before {
+      width: 20%;
+      height: 50%;
+    }
+
+    &:after {
+      width: 50%;
+      height: 45%;
+    }
+
+/*    .image-container {
+      img {
+        transform: scale(1.1);
+        transition: transform 0.8s ease-in-out;
+      }
+    }*/
+  }
+}
+
+@media (min-width: $tablet) {
+  .events:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+}
