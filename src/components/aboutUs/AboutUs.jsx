@@ -5,36 +5,32 @@ export default function AboutUs() {
         <div className="about-us" id="about-us">
             <h2>ЗА НАС</h2>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce hendrerit massa non velit laoreet, eget
-                varius quam hendrerit. Curabitur rutrum justo sed velit cursus luctus. Nullam ac eros aliquet,
-                luctus nisi eu, vehicula tortor. In hac habitasse platea dictumst. Fusce eget arcu metus. Aliquam
-                nec arcu nec massa commodo rhoncus. Vivamus sit amet hendrerit velit. Cras id elit nec quam auctor
-                aliquam nec eget eros. Integer sagittis odio in diam tempus bibendum. Quisque sed ante a magna euismod
-                ultrices.
-                Nunc volutpat lorem nec velit consequat, vel tempus sapien malesuada. Ut semper, lacus nec efficitur
-                luctus, est enim bibendum lacus, eu condimentum dui metus et purus. Pellentesque habitant morbi tristique
-                senectus et netus et malesuada fames ac turpis egestas. Suspendisse potenti. Aliquam nec justo euismod,
-                varius felis nec, luctus est. Vivamus vitae nibh et nunc convallis dignissim. Vestibulum vel felis a
-                tortor finibus tempor.
+                Добре дошли в света на Фитскуад, където Ви очакват незабравими преживявания. Нашите лагери са създадени
+                с мисълта за активни и енергични хора, които искат да комбинират спорт, обучение и забавление
+                в едно незабравимо приключение.
             </p>
             <p>
-                Sed eget eleifend arcu.
-                Nulla ut velit id mauris maximus finibus. Vivamus nec convallis libero, sit amet malesuada sem.
-                Phasellus ultrices risus vel arcu convallis lobortis. Proin nec semper sapien. Curabitur faucibus mi nec
-                urna mattis, nec condimentum purus pellentesque. Cras lacinia, mauris ac malesuada commodo, magna magna
-                fermentum orci, a consectetur magna dui sit amet ex. Sed vehicula consectetur diam, eget vehicula justo
-                tristique sed. Integer interdum arcu a diam tincidunt placerat. Nullam non dictum sapien. Nulla facilisi.
+                В програмата на нашите лагери ще намерите разнообразие от спортни дейности. Нашите опитни треньори ще
+                Ви помогнат да усъвършенствате уменията си и да се забавлявате, докато спортувате. Освен спортни активности,
+                ние предлагаме и лекции, където ще научите полезни техники за здравословен начин на живот, хранене и спорт.
+                За тези, които търсят вътрешен баланс и хармония, предлагаме йога и пилатес сесии, водени от сертифицирани
+                инструктори. Тези практики са идеални за релаксация и подобряване на гъвкавостта и силата на тялото.
+                За да се погрижите за духа си, организираме и дихателни практики, които ще ви помогнат да се
+                освободите от стреса и да се почувствате обновени.
+            </p>
+            <p>
+                Нашите лагери не са само за тренировки – ние знаем колко е важно да се забавлявате и да създавате спомени.
+                Ето защо организираме разнообразни партита и социални събития, където можете да се отпуснете и да се
+                запознаете с нови приятели. Нашите вечери включват музика, танци и много смях, гарантирайки, че ще се
+                забавлявате на макс.
+                В края на всеки ден ще се наслаждавате на незабравими емоции и чувства на удовлетворение от пълноценно
+                прекараното време. Нашите лагери са идеалното място за тези, които искат да избягат от рутината и да се
+                потопят в атмосфера на спорт, здраве и забавление.
             </p>
             <p className="last-paragraph">
-                Proin aliquet, ligula eget tincidunt malesuada, felis nunc tempor velit, sit amet cursus felis magna a
-                metus. Maecenas bibendum nulla at est luctus facilisis. Nam id feugiat est. Pellentesque et tortor nec
-                nisi aliquam elementum. Integer eget dui quis nulla condimentum pharetra. Nulla facilisi. Vivamus vitae
-                ipsum lorem. Sed in tellus sit amet arcu dignissim venenatis nec sed ante. Vestibulum ante ipsum primis
-                in faucibus orci luctus et ultrices posuere cubilia curae; Aenean nec magna in mi faucibus gravida.
-                Sed finibus, purus in viverra tempus, ligula arcu volutpat eros, nec efficitur quam felis in risus.
-                Phasellus a quam tellus. Vivamus nec dictum mi, in venenatis sapien. Integer lobortis, arcu in feugiat
-                ullamcorper, risus dui egestas mauris, vel fringilla enim nisi sit amet erat. Ut nec tortor at sapien
-                cursus rhoncus.
+                Заповядайте при нас и открийте какво означава истинско преживяване, съчетаващо физическа активност, вътрешен
+                мир и социални контакти. Очакваме Ви с отворени обятия и обещаваме, че ще си тръгнете с нови приятели и
+                спомени за цял живот. Присъединете се към нас и започнете своето приключение още днес!
             </p>
         </div>
     )

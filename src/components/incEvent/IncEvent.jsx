@@ -4,6 +4,7 @@ import "swiper/css";
 import {Navigation, Autoplay} from "swiper/modules";
 import "swiper/css/navigation";
 import PaymentButton from "../paymentButton/PaymentButton.jsx"
+import NoSpace from "../noFreeSpace/NoSpace.jsx";
 
 export default function IncEvent({props}) {
 
@@ -37,11 +38,18 @@ export default function IncEvent({props}) {
             </div>
             <div className="text-content">
                 {props.program.map((day, index) =>
-                    <div dangerouslySetInnerHTML={{ __html: day.text}}></div>
+                    <div dangerouslySetInnerHTML={{__html: day.text}}></div>
                 )}
             </div>
-            <PaymentButton amount={props.amount} title={props.title} />
-           {/* <button className="pay-button disable-click" onClick={openModal}>Запази си място</button>*/}
+            {/*<div>*/}
+            {/*    {props.comment.map((day, index) =>*/}
+            {/*        <div dangerouslySetInnerHTML={{__html: day.text}}></div>*/}
+            {/*    )}*/}
+            {/*</div>*/}
+            {
+                props.amount && props.amount !== 0 ? <PaymentButton amount={props.amount} title={props.title}/> : <NoSpace/>
+            }
+
         </div>
     )
 }

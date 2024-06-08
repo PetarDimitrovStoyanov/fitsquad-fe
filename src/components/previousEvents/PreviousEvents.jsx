@@ -15,8 +15,10 @@ export default function PreviousEvents() {
             {image: eventOneThird},
         ],
         delay: 4000,
-        title: "Събитие 1",
-        content: 'Sed eget eleifend arcu. Nulla ut velit id mauris maximus finibus. Vivamus nec convallis libero, sit amet malesuada sem. Phasellus ultrices risus vel arcu convallis lobortis. Proin nec semper sapien. Curabitur faucibus mi nec urna mattis, nec condimentum purus pellentesque. Cras lacinia, mauris ac malesuada commodo, magna magna fermentum orci, a consectetur magna dui sit amet ex. Sed vehicula consectetur diam, eget vehicula justo tristique sed. Integer interdum arcu a diam tincidunt placerat. Nullam non dictum sapien. Nulla facilisi.'
+        title: "Dreams Sunny Beach",
+        content: 'Спомените, които създадохме заедно на последния лагер, все още държат страстта към спорта и ' +
+            'приключенията жива. Ако изпитвате носталгия, не се косете, а се пригответе, защото следващият лагер ' +
+            'е броени мигове от вас! Със същия хъс, ентусиазъм и работа в екип, нека заедно го направим още по-вълнуващ и незабравим.'
     }
 
     const propsEventTwo = {
@@ -26,8 +28,11 @@ export default function PreviousEvents() {
             {image: eventTwoThird},
         ],
         delay: 5000,
-        title: "Събитие 2",
-        content: 'Vivamus nec convallis libero, sit amet malesuada sem. Phasellus ultrices risus vel arcu convallis lobortis. Proin nec semper sapien. Curabitur faucibus mi nec urna mattis, nec condimentum purus pellentesque. Cras lacinia, mauris ac malesuada commodo, magna magna fermentum orci, a consectetur magna dui sit amet ex. Sed vehicula consectetur diam, eget vehicula justo tristique sed. Integer interdum arcu a diam tincidunt placerat.'
+        title: "Sol Nessebar",
+        content: 'Първият тренировъчен лагер на Fit Squad е вече в историята, но сега тепърва започваме. Вие ни показахте, че има смисъл да го правим' +
+            'Искаме да благодарим на всички вас, че ни уважихте. Ние си изкарахме супер яко и се надяваме, че сме успяли да ви предадем част от нашата енергия.' +
+            'Очаквайте много снимки и видеа в страниците ни във фейсбук и инстаграм.' +
+            'Вие ни помагате да растем и усъвършенстваме, а ние ще ви счупим лагерите... '
     }
 
     return (

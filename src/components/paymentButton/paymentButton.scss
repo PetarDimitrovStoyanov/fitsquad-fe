@@ -8,16 +8,22 @@
   align-self: center;
   margin-top: 35px;
   margin-bottom: 35px;
-  border: 1px solid black;
   font-family: Impact, sans-serif;
   font-weight: 400;
   font-size: 25px;
   text-transform: uppercase;
   background: none;
   color: black;
+  border: 1px solid black;
   position: relative;
   z-index: 2;
   //z-index: 1;
+
+  @media (max-width: $tablet) {
+    background: black;
+    color: white;
+    border: 1px solid transparent;
+  }
 
   &:hover {
     background: black;

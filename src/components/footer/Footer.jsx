@@ -3,6 +3,7 @@ import instagram from "./images/instagram.svg";
 import facebook from "./images/facebook.svg";
 import phone from "./images/phone.svg";
 import bgEmpty from "./images/bg.svg";
+import email from "./images/email.svg";
 
 export default function Footer() {
 
@@ -23,18 +24,17 @@ export default function Footer() {
                 </div>
                 <div className="phones">
                     <span>
-                        {/*<img src={phone} alt="phone"/>*/}
-                        <a href="tel:+359888022053">
-                            <p><span><img src={phone} alt="phone"/>+359 888 022 053</span> <span>Чудомир Григоров</span></p>
+                        <a href="tel:+359894482455">
+                            <p><span><img src={phone} alt="phone"/>+359 894 482 455</span> <span>Чудомир Григоров</span></p>
                         </a>
-                        {/*<p>Чудомир Григоров</p>*/}
                     </span>
                     <span>
-                        {/*<img src={phone} alt="phone"/>*/}
-                        <a href="tel:+359888888888">
-                            <p><span><img src={phone} alt="phone"/>+359 888 888 888</span> <span>Ваган</span></p>
+                        <a href="tel:+359899403456">
+                            <p><span><img src={phone} alt="phone"/>+359 899 403 456</span> <span>Ваган Аветисян</span></p>
                         </a>
-                        {/*<p>Ваган</p>*/}
+                    </span>
+                    <span className="email">
+                        <p>fitsquad23@gmail.com</p>
                     </span>
                 </div>
                 <div className="map">
