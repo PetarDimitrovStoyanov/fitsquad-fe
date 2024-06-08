@@ -11,9 +11,9 @@ export default function IncomingEvents() {
 
     const propsEventOne = {
         slides: [
-            {image: eventOneFirst},
             {image: eventOneSecond},
             {image: eventOneThird},
+            {image: eventOneFirst},
         ],
         delay: 4000,
         amount: amount,
