@@ -149,6 +149,45 @@
         }
       }
     }
+
+    &.align-row {
+      display: flex;
+      flex-direction: row;
+      gap: 25px;
+
+      @media (max-width: $mobile) {
+        flex-direction: column;
+      }
+
+      video {
+        @media (max-width: $mobile) {
+          align-self: center;
+          width: 320px;
+          height: 500px;
+        }
+      }
+
+      p {
+        flex-basis: 60%;
+        color: #000;
+        font-family: Montserrat, sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        letter-spacing: 0.3px;
+
+        @media (max-width: $mobile) {
+          flex-basis: 100%;
+        }
+      }
+    }
+  }
+
+  .comment {
+    width: 100%;
+
+    p {
+      text-align: center;
+    }
   }
 
   &:hover {

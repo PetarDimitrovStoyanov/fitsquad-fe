@@ -2,11 +2,12 @@ import "./incomingEvents.scss"
 import eventOneFirst from "./images/emerald1.jpg"
 import eventOneSecond from "./images/emerald2.jpg"
 import eventOneThird from "./images/emerald3.png"
+import eventOneForth from "./video/Malina.mp4"
 import IncEvents from "../incEvent/IncEvent.jsx";
 
 export default function IncomingEvents() {
 
-    const amount = 0;
+    const amount = 380 * 100;
     //const amount = 750 * 100;
 
     const propsEventOne = {
@@ -73,11 +74,43 @@ export default function IncomingEvents() {
         ]
     }
 
+    const propsEventTwo = {
+        slides: [
+            {image: eventOneForth},
+        ],
+        delay: 4000,
+        alignRow: true,
+        amount: amount,
+        title: "Вила Малина - 2024",
+        content: 'Искате ли да избягате от градската суета и да се насладите на свеж въздух, физически активности и незабравими преживявания сред природата? Нашият спортен лагер е точно за вас!\n' +
+            'Фит скуад ви кани в сърцето на Пампорово \n' +
+            'Периодът е 20-22 септември\n' +
+            'Място: Вили Малина\n' +
+            'Какво ви очаква:\n' +
+            'Уникални тренировки и спортни занимания на открито\n' +
+            'Йога и медитация сред зеленина\n' +
+            'Вечери край лагерния огън и незабравими разговори\n' +
+            'Защо да се присъедините:\n' +
+            '* Подобряване на физическата форма\n' +
+            '* Нови приятели и забавления\n' +
+            '* Пълноценна почивка далеч от ежедневния стрес\n' +
+            '* Възможност за преоткриване на природата\n' +
+            'Не пропускайте тази възможност за приключение и възстановяване! Регистрирайте се сега и запазете своето място!\n',
+        program: [
+            {
+                text: `<p>За повече информация, моля свържете се с нас.</p>`
+            },
+            {
+                text: `<p><span style="font-size: 25px; color: lightgray">&#x25A0;</span> Цена: <b> ${(amount / 100).toFixed(2)} лева</b></p>`
+            }
+        ]
+    }
+
     return (
         <div className="incoming-events-container" id="incoming-events">
             <h2>Предстоящи Събития</h2>
             <div className="incoming-events">
-                <IncEvents props={propsEventOne}/>
+                <IncEvents props={propsEventTwo}/>
             </div>
         </div>
     )
