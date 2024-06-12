@@ -68,7 +68,7 @@
     color: black;
     border-radius: 4px;
     //background: white;
-    background: url("../../components/incomingEvents/images/malina1.jpg");
+    background: url("../../components/incomingEvents/images/malina2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -98,14 +98,17 @@
 
       h3, p {
         color: white;
-        background-color: rgba(0, 0, 0, 0.5);
         padding: 10px 15px;
+        text-align: center;
+        width: fit-content;
+        margin: 0 auto;
       }
 
       h3 {
         font-family: Impact, sans-serif;
         font-weight: 400;
         font-size: 22px;
+        background-color: rgba(0, 0, 0, 0.5);
       }
 
       p {

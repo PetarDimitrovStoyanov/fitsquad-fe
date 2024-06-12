@@ -12,15 +12,13 @@ export default function IncEvent({props}) {
     const videoRef = useRef(null);
 
     useEffect(() => {
-
         const videoElement = videoRef.current;
         if (videoElement) {
             videoElement.muted = true; // Ensure the video is muted
             videoElement.play();
         }
-
-
     }, []);
+
 
     const openModal = () => {
         //document.getElementById('modal').classList.toggle('active');
@@ -94,13 +92,30 @@ export default function IncEvent({props}) {
                 {/*        </SwiperSlide>*/}
                 {/*    ))}*/}
                 {/*</Swiper>*/}
-                <p> {props.content} </p>
+                <p> {props.content}
+                <span>
+                    <p>За повече информация, моля свържете се с нас</p>
+                </span>
+                    <span>
+                         Цена: <b> 380.00 лева</b>
+                        {/*<p><span style="font-size: 25px; color: lightgray">&#x25A0;</span> Цена: <b> 380.00 лева</b></p>*/}
+                        {/*<p><span style="font-size: 25px; color: lightgray">&#x25A0;</span> Цена: <b> ${Number('380').toFixed(2)} лева</b></p>*/}
+                    </span>
+                </p>
+
+
+                {/*<div className="text-content comment">*/}
+                {/*    {props.program.map((day, index) =>*/}
+                {/*        <div dangerouslySetInnerHTML={{__html: day.text}}></div>*/}
+                {/*    )}*/}
+                {/*</div>*/}
+
             </div>
-            <div className="text-content comment">
-                {props.program.map((day, index) =>
-                    <div dangerouslySetInnerHTML={{__html: day.text}}></div>
-                )}
-            </div>
+            {/*<div className="text-content comment">*/}
+            {/*    {props.program.map((day, index) =>*/}
+            {/*        <div dangerouslySetInnerHTML={{__html: day.text}}></div>*/}
+            {/*    )}*/}
+            {/*</div>*/}
             {/*<div>*/}
             {/*    {props.comment.map((day, index) =>*/}
             {/*        <div dangerouslySetInnerHTML={{__html: day.text}}></div>*/}
