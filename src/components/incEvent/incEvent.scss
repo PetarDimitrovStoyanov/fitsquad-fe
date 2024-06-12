@@ -159,6 +159,14 @@
         flex-direction: column;
       }
 
+      .content-holder {
+        color: black;
+        font-family: Montserrat, sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        letter-spacing: 0.30px;
+      }
+
       video {
         @media (max-width: $mobile) {
           align-self: center;
@@ -168,7 +176,7 @@
       }
 
       p {
-        flex-basis: 60%;
+        flex-basis: 72%;
         color: #000;
         font-family: Montserrat, sans-serif;
         font-weight: 500;
@@ -178,6 +186,29 @@
         @media (max-width: $mobile) {
           flex-basis: 100%;
         }
+      }
+
+      .square {
+        font-size: 25px;
+        color: lightgray
+      }
+
+      .content-holder {
+        margin: 0;
+
+        p {
+          margin: 0;
+        }
+
+        a {
+          color: #86B834;
+          text-decoration: none;
+        }
+
+        a:hover {
+          text-decoration: underline;
+        }
+
       }
     }
   }

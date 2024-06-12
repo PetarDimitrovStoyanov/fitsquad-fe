@@ -1,15 +1,13 @@
 import "./incEvent.scss"
-import {Swiper, SwiperSlide} from "swiper/react";
 import "swiper/css";
-import {Navigation, Autoplay} from "swiper/modules";
 import "swiper/css/navigation";
 import PaymentButton from "../paymentButton/PaymentButton.jsx"
 import NoSpace from "../noFreeSpace/NoSpace.jsx";
-import {useEffect, useRef} from "react";
+import {useEffect, useRef, useState} from "react";
 
 export default function IncEvent({props}) {
-
     const videoRef = useRef(null);
+    const [retryCount, setRetryCount] = useState(0);
 
     useEffect(() => {
         const videoElement = videoRef.current;
@@ -18,6 +16,10 @@ export default function IncEvent({props}) {
             videoElement.play();
         }
     }, []);
+
+    const handleVideoEnded = () => {
+        setRetryCount(retryCount + 1)
+    };
 
 
     const openModal = () => {
@@ -73,7 +75,7 @@ export default function IncEvent({props}) {
             </div>
             <div className="carousel  align-row">
                 {props.slides.map((slide, index) =>
-                    <video ref={videoRef} width="300" height="400" controls autoPlay>
+                    <video key={index + retryCount} ref={videoRef} width="300" height="400" controls muted autoPlay onEnded={handleVideoEnded}>
                         <source src={slide.image} type="video/mp4"/>
                     </video>
                 ) }
@@ -92,16 +94,14 @@ export default function IncEvent({props}) {
                 {/*        </SwiperSlide>*/}
                 {/*    ))}*/}
                 {/*</Swiper>*/}
-                <p> {props.content}
+                <div className="content-holder"> {props.content}
                 <span>
-                    <p>За повече информация, моля свържете се с нас</p>
+                    <p>За повече информация, моля свържете се с нас.</p>
                 </span>
-                    <span>
-                         Цена: <b> 380.00 лева</b>
+                        <span className="square">&#x25A0; </span> Цена: <b> {(props.amount / 100).toFixed(2)} лева</b>
                         {/*<p><span style="font-size: 25px; color: lightgray">&#x25A0;</span> Цена: <b> 380.00 лева</b></p>*/}
                         {/*<p><span style="font-size: 25px; color: lightgray">&#x25A0;</span> Цена: <b> ${Number('380').toFixed(2)} лева</b></p>*/}
-                    </span>
-                </p>
+                </div>
 
 
                 {/*<div className="text-content comment">*/}
