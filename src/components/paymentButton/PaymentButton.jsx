@@ -1,10 +1,11 @@
 import "./paymentButton.scss";
 
 const PaymentButton = ({amount, title}) => {
+    const beBaseUrl = process.env.BACKEND_BASE_URL;
     const handlePayment = async () => {
         try {
             // Make a request to the Spring backend to create a Checkout session
-            const response = await fetch('http://localhost:9034/api/fit-squad/stripe/create-checkout-session', {
+            const response = await fetch(`${beBaseUrl}/stripe/create-checkout-session`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

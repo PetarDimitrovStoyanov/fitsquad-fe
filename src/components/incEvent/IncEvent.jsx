@@ -24,7 +24,6 @@ export default function IncEvent({props}) {
 
     const openModal = () => {
         //document.getElementById('modal').classList.toggle('active');
-        window.location.href = "https://buy.stripe.com/test_9AQdSF16k2kg6AM288";
     }
 
     return (
