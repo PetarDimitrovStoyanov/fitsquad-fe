@@ -5,7 +5,6 @@ const PaymentButton = ({amount, title}) => {
     const handlePayment = async () => {
 
         try {
-            // Make a request to the Spring backend to create a Checkout session
             const response = await fetch(`${beBaseUrl}/stripe/create-checkout-session`, {
                 method: 'POST',
                 headers: {
@@ -19,9 +18,6 @@ const PaymentButton = ({amount, title}) => {
             }
 
             const data = await response.json();
-
-            console.log(data)
-            // Redirect the user to the Stripe Checkout page
             window.location.href = data.sessionUrl;
         } catch (error) {
             console.error('Error initiating payment:', error);
