@@ -7,7 +7,7 @@ import IncEvents from "../incEvent/IncEvent.jsx";
 
 export default function IncomingEvents() {
 
-    const amount = 2 * 100;
+    const amount = 380 * 100;
     //const amount = 380 * 100;
 
 
