@@ -7,7 +7,9 @@ import React, { useEffect } from 'react';
 export default function App() {
 
     const openModal = () => {
-        document.getElementById('modal').classList.add('active');
+        if (!location.href.endsWith("success") && !location.href.endsWith("cancel")) {
+            document.getElementById('modal').classList.add('active');
+        }
     }
 
     useEffect(() => {
