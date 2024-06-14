@@ -1,5 +1,5 @@
 import "./incomingEvents.scss"
-import eventOneForth from "./video/malina-compressed.mp4"
+// import eventOneForth from "./video/malina-compressed.mp4"
 import IncEvents from "../incEvent/IncEvent.jsx";
 
 export default function IncomingEvents() {
@@ -74,7 +74,7 @@ export default function IncomingEvents() {
 
     const propsEventTwo = {
         slides: [
-            {image: eventOneForth},
+            {image: "https://res.cloudinary.com/dndecbxfg/video/upload/v1718396387/malina-compressed_a69woj.mp4"},
         ],
         delay: 4000,
         alignRow: true,

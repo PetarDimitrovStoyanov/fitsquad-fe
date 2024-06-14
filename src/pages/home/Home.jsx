@@ -2,7 +2,7 @@ import "./home.scss";
 import PreviousEvents from "../../components/previousEvents/PreviousEvents.jsx";
 import IncomingEvents from "../../components/incomingEvents/IncomingEvents.jsx";
 import AboutUs from "../../components/aboutUs/AboutUs.jsx";
-import videoBg from "../home/video/hero-compressed.mp4";
+// import videoBg from "../home/video/hero-compressed.mp4";
 import ArrowDown from "../../components/arrowDown/ArrowDown.jsx";
 
 export default function Home() {
@@ -18,7 +18,7 @@ export default function Home() {
     return (
         <div className="home-page-container">
             <div className="video-container">
-                <video src={videoBg} autoPlay muted loop />
+                <video src="https://res.cloudinary.com/dndecbxfg/video/upload/v1718396398/hero-compressed_fwtcl4.mp4" autoPlay muted loop />
                 <ArrowDown redirectTo={redirectTo} text="Съчетай спорт, здраве и забавление" />
             </div>
             <AboutUs />
