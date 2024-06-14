@@ -2,7 +2,7 @@ import "./home.scss";
 import PreviousEvents from "../../components/previousEvents/PreviousEvents.jsx";
 import IncomingEvents from "../../components/incomingEvents/IncomingEvents.jsx";
 import AboutUs from "../../components/aboutUs/AboutUs.jsx";
-import videoBg from "../home/video/facebook.mp4";
+import videoBg from "../home/video/hero-compressed.mp4";
 import ArrowDown from "../../components/arrowDown/ArrowDown.jsx";
 
 export default function Home() {

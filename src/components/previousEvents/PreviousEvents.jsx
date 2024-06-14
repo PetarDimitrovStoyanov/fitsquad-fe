@@ -1,11 +1,11 @@
 import "./previousEvents.scss";
 import PrevEvent from "../prevEvent/PrevEvent.jsx";
-import eventOneFirst from "./images/event1-1.jpg"
-import eventOneSecond from "./images/event1-2.jpg"
-import eventOneThird from "./images/event1-3.jpg"
-import eventTwoThird from "./images/event2-3.jpg"
-import eventTwoSecond from "./images/event2-2.jpg"
-import eventTwoFirst from "./images/event2-1.jpg"
+import eventOneFirst from "./images/event1-1.webp"
+import eventOneSecond from "./images/event1-2.webp"
+import eventOneThird from "./images/event1-3.webp"
+import eventTwoThird from "./images/event2-3.webp"
+import eventTwoSecond from "./images/event2-2.webp"
+import eventTwoFirst from "./images/event2-1.webp"
 
 export default function PreviousEvents() {
     const propsEventOne = {

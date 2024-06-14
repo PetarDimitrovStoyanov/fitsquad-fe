@@ -1,8 +1,5 @@
 import "./incomingEvents.scss"
-import eventOneFirst from "./images/emerald1.jpg"
-import eventOneSecond from "./images/emerald2.jpg"
-import eventOneThird from "./images/emerald3.png"
-import eventOneForth from "./video/Malina.mp4"
+import eventOneForth from "./video/malina-compressed.mp4"
 import IncEvents from "../incEvent/IncEvent.jsx";
 
 export default function IncomingEvents() {
@@ -13,9 +10,9 @@ export default function IncomingEvents() {
 
     const propsEventOne = {
         slides: [
-            {image: eventOneSecond},
-            {image: eventOneThird},
-            {image: eventOneFirst},
+            // {image: eventOneSecond},
+            // {image: eventOneThird},
+            // {image: eventOneFirst},
         ],
         delay: 4000,
         amount: amount,
