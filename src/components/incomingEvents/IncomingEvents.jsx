@@ -1,10 +1,20 @@
 import "./incomingEvents.scss"
-// import eventOneForth from "./video/malina-compressed.mp4"
+import malaga1 from "./images/1.webp"
+import malaga2 from "./images/2.webp"
+import malaga3 from "./images/3.webp"
+import malaga4 from "./images/4.webp"
+import malaga5 from "./images/5.webp"
+import malaga6 from "./images/6.webp"
+import malaga7 from "./images/7.webp"
+import malaga8 from "./images/8.webp"
+import malaga9 from "./images/9.webp"
+import malaga10 from "./images/10.webp"
+import malaga11 from "./images/11.webp"
 import IncEvents from "../incEvent/IncEvent.jsx";
 
 export default function IncomingEvents() {
 
-    const amount = 380 * 100;
+    const amount =  1 * 100;
     //const amount = 380 * 100;
 
 
@@ -125,11 +135,118 @@ export default function IncomingEvents() {
         ]
     }
 
+
+    const propsEventThree = {
+        slides: [
+             {image: malaga1},
+             {image: malaga2},
+             {image: malaga3},
+             {image: malaga4},
+             {image: malaga5},
+             {image: malaga6},
+             {image: malaga7},
+             {image: malaga8},
+             {image: malaga9},
+             {image: malaga10},
+             {image: malaga11}
+        ],
+        delay: 4000,
+        amount: amount,
+        title: "СПОРТЕН ЛАГЕР – МАГИЯТА НА ИСПАНИЯ",
+        content: '<div>' +
+            '<div><h3>Дестинация: Малага, Испания</h3>' +
+            '&#x25A0; Период: 25 – 29 март 2024 г. (4 нощувки)</br>' +
+            '&#x25A0; Цена на човек: <b> 2.00 лева</b><div>' +
+            '</br><h4>Акценти на офертата: </h4>' +
+            '</div>' +
+            '<div><span>🌞</span> <span>Спортен лагер в Испания – уникално съчетание от активна почивка, културни открития и релаксация на Средиземно море.</span> </div>' +
+            '<div><span>🏨</span> <span>Настаняване в FAY HOTELS VICTORIA BEACH – модерен хотел, разположен на самия морски бряг.</span></div>' +
+            '<div><span>🚴‍♀️ </span> <span>Спортни активности и обиколки на открито – насладете се на активни дни под слънчевите лъчи на Малага.</span></div></div className="square">',
+        program: [
+            {
+                day: 1,
+                text: '<div class="days-programs">' +
+                    '<div style="font-size: 25px; color: lightgray">&#x25A0;</div>' +
+                    '<div class="program">' +
+                    '<span><b>1-ви ден / 25.03.2025 (СОФИЯ - МАЛАГА)</b></span>' +
+                    '<span>5:45 - Отпътуване от летище София с директен полет на авиокомпания "Ryanair". </span>' +
+                    '<span>8:50 - Пристигане и трансфер от летището до FAY HOTELS VICTORIA BEACH. </span>' +
+                    '<span>10:00 - Настаняване и свободно време за релаксация край морето. </span>' +
+                    '<span>12:00 - Обяд </span>' +
+                    '<span>16:00 - Тренировка за корем + стречинг практика </span>' +
+                    '<span>19:00 - Лекция на тема здравословно хранене и фитнес тренировки </span>' +
+                    '<span>20:30 - Вечеря </span>' +
+                    '</div></div>'
+            },
+            {
+                day: 2,
+                text: '<div class="days-programs">' +
+                    '<div style="font-size: 25px; color: lightgray">&#x25A0;</div>' +
+                    '<div class="program">' +
+                    '<span><b>2-ри ден / 26.03.2025 </b></span>' +
+                    '<span>8:00 - Закуска </span>' +
+                    '<span>10:00 - Тренировка на плажа </span>' +
+                    '<span>12:00 - Обяд </span>' +
+                    '<span>13:00 - Обиколка на Малага с велосипед. </span>' +
+                    '<span>Посещения на забележителности: </span>' +
+                    '<span>- Катедралата на Малага (Catedral de Málaga).</span>' +
+                    '<span>- Музеят на Малага (Museo de Málaga).</span>' +
+                    '<span>- Крепостта Гибралфаро (Castillo de Gibralfaro)  – невероятни панорамни гледки към града и морето. </span>' +
+                    '<span>- Арената за корида на Малага (Plaza de Toros) </span>' +
+                    '<span>20:00 - Вечеря </span>' +
+                    '</div></div>'
+            },
+            {
+                day: 3,
+                text: '<div class="days-programs">' +
+                    '<div style="font-size: 25px; color: lightgray">&#x25A0;</div>' +
+                    '<div class="program">' +
+                    '<span><b>3-ти ден / 27.03.2025</b></span>' +
+                    '<span>8:00 - Закуска </span>' +
+                    '<span>10:00 - Екскурзия до Каминито дел Рей (Caminito del Rey)  – емблематична пътека за любителите на адреналина със спиращи дъха и ума гледки! </span>' +
+                    '<span>14:00 - Обяд </span>' +
+                    '<span>17:00 - Тренировка на плажа </span>' +
+                    '<span>20:00 - Вечеря </span>' +
+                    '</div></div>'
+            },
+            {
+                day: 4,
+                text: '<div class="days-programs">' +
+                    '<div style="font-size: 25px; color: lightgray">&#x25A0;</div>' +
+                    '<div class="program">' +
+                    '<span><b>4-ти ден / 28.03.2025</b></span>' +
+                    '<span>8:00 - Закуска </span>' +
+                    '<span>10:00 - Тренировка на плажа </span>' +
+                    '<span>12:00 - Обяд </span>' +
+                    '<span>16:00 – Пилатес с Кристина Маврова </span>' +
+                    '<span>20:00 - Вечеря на крайбрежно заведение </span>' +
+                    '</div></div>'
+            },
+            {
+                day: 5,
+                text: '<div class="days-programs">' +
+                    '<div style="font-size: 25px; color: lightgray">&#x25A0;</div>' +
+                    '<div class="program">' +
+                    '<span><b>5-ти ден / 29.03.2025 (МАЛАГА - СОФИЯ)</b></span>' +
+                    '<span>5:20 - Закуска </span>' +
+                    '<span>5:40 - Трансфер до летището </span>' +
+                    '<span>7:05 - Отпътуване от летище Малага с директен полет на авиокомпания "Ryanair". </span>' +
+                    '</div></div>'
+            },
+            {
+                text: `<p>Програмата подлежи на промяна!</p>`
+            },
+            // {
+            //     text: `<p><span style="font-size: 25px; color: lightgray">&#x25A0;</span> Цена: <b> ${amount / 100} лева</b></p>`
+            // }
+        ]
+    }
+
     return (
         <div className="incoming-events-container" id="incoming-events">
             <h2>Предстоящи Събития</h2>
             <div className="incoming-events">
-                <IncEvents props={propsEventTwo}/>
+                <IncEvents props={propsEventThree}/>
             </div>
         </div>
     )

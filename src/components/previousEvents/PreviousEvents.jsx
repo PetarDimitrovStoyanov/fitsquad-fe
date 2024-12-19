@@ -6,6 +6,7 @@ import eventOneThird from "./images/event1-3.webp"
 import eventTwoThird from "./images/event2-3.webp"
 import eventTwoSecond from "./images/event2-2.webp"
 import eventTwoFirst from "./images/event2-1.webp"
+import eventThreeOne from "../../components/incomingEvents/images/malina-banner.webp"
 
 export default function PreviousEvents() {
     const propsEventOne = {
@@ -35,6 +36,17 @@ export default function PreviousEvents() {
             'Вие ни помагате да растем и да се усъвършенстваме, а ние ще Ви счупим лагерите... '
     }
 
+    const propsEventThree = {
+        slides: [
+            {image: eventThreeOne}
+        ],
+        delay: 5000,
+        title: "Вила Малина",
+        content: 'Бягството от градската среда беше възможно с този неповторим лагер. Фокусът ни беше върху неповторимите изживявания и физическата активност' +
+            ' сред чистия въздух и красивата природа на Пампорово. ' +
+            'Имаше йога, медитация сред зеленина, спортни дейности на открито, вечери край лагерния огън и незабравими разговори.'
+    }
+
     return (
         <div className="previous-events-container" id="previous-events">
             <div className="previous-content">
@@ -42,6 +54,7 @@ export default function PreviousEvents() {
                 <div className="events-container">
                     <PrevEvent props={propsEventOne}/>
                     <PrevEvent props={propsEventTwo}/>
+                    <PrevEvent props={propsEventThree}/>
                 </div>
             </div>
             <div className="polygon-previous-events"></div>

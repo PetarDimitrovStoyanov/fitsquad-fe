@@ -4,6 +4,8 @@ import "swiper/css/navigation";
 import PaymentButton from "../paymentButton/PaymentButton.jsx"
 import NoSpace from "../noFreeSpace/NoSpace.jsx";
 import {useEffect, useRef, useState} from "react";
+import {Swiper, SwiperSlide} from "swiper/react";
+import {Autoplay, Navigation} from "swiper/modules";
 
 export default function IncEvent({props}) {
     const videoRef = useRef(null);
@@ -73,41 +75,42 @@ export default function IncEvent({props}) {
                 <h3> {props.title} </h3>
             </div>
             <div className="carousel  align-row">
-                {props.slides.map((slide, index) =>
-                    <video key={index + retryCount} ref={videoRef} width="300" height="400" controls muted autoPlay onEnded={handleVideoEnded}>
-                        <source src={slide.image} type="video/mp4"/>
-                    </video>
-                ) }
-                {/*<Swiper*/}
-                {/*    spaceBetween={1}*/}
-                {/*    slidesPerView={1}*/}
-                {/*    navigation={true}*/}
-                {/*    modules={[Navigation, Autoplay]}*/}
-                {/*    autoplay={{delay: props.delay, disableOnInteraction: false}}*/}
-                {/*>*/}
-                {/*    {props.slides.map((slide, index) => (*/}
-                {/*        <SwiperSlide key={index}>*/}
-                {/*            <div className="image-container">*/}
-                {/*                <img src={slide.image} alt="image"/>*/}
-                {/*            </div>*/}
-                {/*        </SwiperSlide>*/}
-                {/*    ))}*/}
-                {/*</Swiper>*/}
-                <div className="content-holder"> {props.content}
+                {/*{props.slides.map((slide, index) =>*/}
+                {/*    <video key={index + retryCount} ref={videoRef} width="300" height="400" controls muted autoPlay onEnded={handleVideoEnded}>*/}
+                {/*        <source src={slide.image} type="video/mp4"/>*/}
+                {/*    </video>*/}
+                {/*) }*/}
+                <Swiper
+                    spaceBetween={1}
+                    slidesPerView={1}
+                    navigation={true}
+                    modules={[Navigation, Autoplay]}
+                    autoplay={{delay: props.delay, disableOnInteraction: false}}
+                >
+                    {props.slides.map((slide, index) => (
+                        <SwiperSlide key={index}>
+                            <div className="image-container">
+                                <img src={slide.image} alt="image"/>
+                            </div>
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+                <div className="content-holder">
+                    <div dangerouslySetInnerHTML={{__html: props.content}}></div>
                 <span>
                     <p>За повече информация, моля свържете се с нас.</p>
                 </span>
-                        <span className="square">&#x25A0; </span> Цена: <b> {(props.amount / 100).toFixed(2)} лева</b>
+                        {/*<span className="square">&#x25A0; </span> Цена: <b> {(props.amount / 100).toFixed(2)} лева</b>*/}
                         {/*<p><span style="font-size: 25px; color: lightgray">&#x25A0;</span> Цена: <b> 380.00 лева</b></p>*/}
                         {/*<p><span style="font-size: 25px; color: lightgray">&#x25A0;</span> Цена: <b> ${Number('380').toFixed(2)} лева</b></p>*/}
                 </div>
 
 
-                {/*<div className="text-content comment">*/}
-                {/*    {props.program.map((day, index) =>*/}
-                {/*        <div dangerouslySetInnerHTML={{__html: day.text}}></div>*/}
-                {/*    )}*/}
-                {/*</div>*/}
+                <div className="text-content comment">
+                    {props.program.map((day, index) =>
+                        <div dangerouslySetInnerHTML={{__html: day.text}}></div>
+                    )}
+                </div>
 
             </div>
             {/*<div className="text-content comment">*/}
