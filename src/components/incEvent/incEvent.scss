@@ -119,6 +119,12 @@
       height: 500px;
       width: 100%;
 
+      @media (max-width: 1024px) {
+        height: 300px;
+        width: 100%;
+        max-height: unset;
+      }
+
 
       .swiper-wrapper {
         .swiper-slide {
@@ -126,6 +132,10 @@
             img {
               width: 100%;
               object-fit: cover;
+
+              @media (max-width: 1024px) {
+                height: 300px;
+              }
             }
           }
         }
@@ -170,13 +180,13 @@
         letter-spacing: 0.30px;
       }
 
-      video {
-        @media (max-width: $mobile) {
-          align-self: center;
-          width: 320px;
-          height: 500px;
-        }
-      }
+      //video {
+      //  @media (max-width: $mobile) {
+      //    align-self: center;
+      //    width: 320px;
+      //    height: 500px;
+      //  }
+      //}
 
       p {
         flex-basis: 72%;
